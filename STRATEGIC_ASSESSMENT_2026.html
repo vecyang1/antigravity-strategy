@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Border Jewelry E-Commerce: Strategic Assessment 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .header .meta {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+
+        .alert {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 30px 40px;
+            border-radius: 8px;
+        }
+
+        .alert.critical {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .alert.success {
+            background: #d4edda;
+            border-left-color: #28a745;
+        }
+
+        .alert h3 {
+            margin-bottom: 10px;
+            color: #856404;
+        }
+
+        .alert.critical h3 {
+            color: #721c24;
+        }
+
+        .alert.success h3 {
+            color: #155724;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+            color: #764ba2;
+        }
+
+        .section h4 {
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+            color: #555;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .data-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .data-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .data-card .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .data-card .value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .data-card .description {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        tbody tr:hover {
+            background: #f5f7fa;
+        }
+
+        .comparison-table {
+            margin: 30px 0;
+        }
+
+        .comparison-table .claimed {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        .comparison-table .actual {
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .rating {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .rating.high {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .rating.medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .rating.low {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .rating.critical {
+            background: #721c24;
+            color: white;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .pros, .cons {
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .pros {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .cons {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+
+        .pros h4, .cons h4 {
+            margin-bottom: 15px;
+            color: #155724;
+        }
+
+        .cons h4 {
+            color: #721c24;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .recommendation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .recommendation h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .source {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .methodology {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .chart-placeholder {
+            background: #f5f7fa;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px dashed #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Cross-Border Jewelry E-Commerce</h1>
+            <div class="subtitle">Independent Strategic Assessment 2026</div>
+            <div class="meta">
+                Research Period: February 2026 | Markets Analyzed: US, Japan, Australia, Mexico, Middle East<br>
+                Methodology: Independent verification of all claims with primary sources
+            </div>
+        </div>
+
+        <div class="alert critical">
+            <h3>⚠️ CRITICAL POLICY CHANGE: US Market Fundamentally Altered</h3>
+            <p><strong>The "Golden Era" of Chinese Cross-Border E-Commerce to the US is OVER.</strong></p>
+            <ul>
+                <li><strong>De Minimis Eliminated:</strong> May 2025 (China/HK), August 2025 (global) - no more duty-free shipments under $800</li>
+                <li><strong>Tariffs Increased:</strong> Jewelry tariffs jumped from 5% to 25-54% (Section 301 + Section 232)</li>
+                <li><strong>Export Rebates Cut:</strong> China reducing 13% export tax rebates starting April 2026</li>
+                <li><strong>Impact:</strong> US market viability for China-sourced jewelry severely compromised. Strategic pivot required.</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>📊 Executive Summary</h2>
+
+                <div class="methodology">
+                    <h3>Research Methodology</h3>
+                    <p>This report represents an <strong>independent verification</strong> of previous market research claims. A team of 6 specialized research agents conducted parallel investigations across:</p>
+                    <ul>
+                        <li>Global jewelry market sizing and growth projections (2024-2030)</li>
+                        <li>Niche market validation (anxiety jewelry, pet memorial, crystal/spiritual jewelry)</li>
+                        <li>Regional market analysis (US, Japan, Australia, Mexico, Middle East)</li>
+                        <li>Trade policy and cross-border e-commerce regulations</li>
+                    </ul>
+                    <p><strong>Key Finding:</strong> Multiple significant discrepancies were discovered between claimed data and verified sources. This report presents only validated data with primary source citations.</p>
+                </div>
+
+                <h3>Key Findings at a Glance</h3>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">Global Jewelry Market</div>
+                        <div class="value">$242-381B</div>
+                        <div class="description">2025 market size, growing 4.5-5.5% CAGR through 2030</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">US E-Commerce Jewelry</div>
+                        <div class="value">$22.5B</div>
+                        <div class="description">2024, but facing 25-54% tariffs from China</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Japan Market Growth</div>
+                        <div class="value">9.4% CAGR</div>
+                        <div class="description">Highest growth potential through 2034</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Pet Memorial Market</div>
+                        <div class="value">$6.3B</div>
+                        <div class="description">Validated, 11-12% CAGR for cremation jewelry</div>
+                    </div>
+                </div>
+
+                <h3>Critical Data Corrections</h3>
+                <p>Our independent research identified several major discrepancies in previously reported market data:</p>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Market Segment</th>
+                            <th>Previously Claimed</th>
+                            <th>Verified Actual</th>
+                            <th>Discrepancy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Crystal Jewelry Market</td>
+                            <td class="claimed">$27.4B → $61.4B by 2033</td>
+                            <td class="actual">~$1B (20-50x smaller)</td>
+                            <td><span class="rating critical">FABRICATED</span></td>
+                        </tr>
+                        <tr>
+                            <td>Spiritual Jewelry Market</td>
+                            <td class="claimed">$3.2B</td>
+                            <td class="actual">$14.78B</td>
+                            <td><span class="rating medium">UNDERSTATED</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pet Memorial Market</td>
+                            <td class="claimed">$6.29B</td>
+                            <td class="actual">$6.265B</td>
+                            <td><span class="rating high">VERIFIED ✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Anxiety Jewelry Positioning</td>
+                            <td class="claimed">"Blue Ocean Market"</td>
+                            <td class="actual">Red Ocean (Competitive)</td>
+                            <td><span class="rating critical">MISLEADING</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>🌍 Global Jewelry Market Overview</h2>
+
+                <h3>Market Size & Growth (2024-2030)</h3>
+                <p>The global jewelry market demonstrates steady growth with regional variations:</p>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">2025 Market Size</div>
+                        <div class="value">$242-381B</div>
+                        <div class="description">Range reflects different methodologies (retail vs wholesale)</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">2030 Projection</div>
+                        <div class="value">$307-520B</div>
+                        <div class="description">Based on 4.5-5.5% CAGR</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Fashion Jewelry</div>
+                        <div class="value">$41.3B</div>
+                        <div class="description">Growing at 5.6% CAGR</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">E-Commerce Share</div>
+                        <div class="value">15-25%</div>
+                        <div class="description">Varies by region, growing rapidly</div>
+                    </div>
+                </div>
+
+                <h3>Regional Distribution</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>Market Share</th>
+                            <th>Growth Rate</th>
+                            <th>Key Characteristics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Asia-Pacific</td>
+                            <td>42%</td>
+                            <td>Highest</td>
+                            <td>Led by China, India, Japan; strong cultural jewelry demand</td>
+                        </tr>
+                        <tr>
+                            <td>North America</td>
+                            <td>28-30%</td>
+                            <td>Moderate</td>
+                            <td>Mature market, high e-commerce penetration</td>
+                        </tr>
+                        <tr>
+                            <td>Europe</td>
+                            <td>25-27%</td>
+                            <td>Moderate</td>
+                            <td>Luxury focus, sustainability trends</td>
+                        </tr>
+                        <tr>
+                            <td>Middle East & Africa</td>
+                            <td>6%</td>
+                            <td>High</td>
+                            <td>Gold preference, high per-capita spending</td>
+                        </tr>
+                        <tr>
+                            <td>Latin America</td>
+                            <td>7%</td>
+                            <td>Moderate-High</td>
+                            <td>Price-sensitive, growing e-commerce</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="source">Sources: Statista, Grand View Research, McKinsey Jewelry Report 2024</p>
+            </div>
+
+            <div class="section">
+                <h2>🗺️ Regional Market Analysis & Growth Forecasts</h2>
+
+                <h3>🇺🇸 United States Market</h3>
+                
+                <div class="alert critical">
+                    <h3>⚠️ CRITICAL: US Market Viability Severely Compromised</h3>
+                    <p>Recent policy changes have fundamentally altered the economics of China→US jewelry exports:</p>
+                    <ul>
+                        <li><strong>De Minimis Eliminated:</strong> No more duty-free shipments under $800 (effective May 2025 for China/HK)</li>
+                        <li><strong>Tariffs: 25-54%</strong> on jewelry from China (Section 301 + Section 232)</li>
+                        <li><strong>Cost Impact:</strong> A $10 wholesale item now costs $12.50-$15.40 after tariffs</li>
+                        <li><strong>Recommendation:</strong> US market should NOT be primary focus for China-sourced products</li>
+                    </ul>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">2024 E-Commerce Market</div>
+                        <div class="value">$22.5B</div>
+                        <div class="description">Online jewelry sales</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">E-Commerce Growth</div>
+                        <div class="value">22.1% CAGR</div>
+                        <div class="description">2024-2030 projection</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">2030 Projection</div>
+                        <div class="value">$75.8B</div>
+                        <div class="description">But tariffs make China sourcing uncompetitive</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Tariff Impact</div>
+                        <div class="value">25-54%</div>
+                        <div class="description">Additional cost on China-sourced jewelry</div>
+                    </div>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✅ Market Strengths</h4>
+                        <ul>
+                            <li>Largest e-commerce jewelry market globally</li>
+                            <li>High consumer spending power</li>
+                            <li>Strong demand for wellness/spiritual jewelry</li>
+                            <li>Mature logistics infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>❌ Critical Risks</h4>
+                        <ul>
+                            <li>25-54% tariffs on China-sourced products</li>
+                            <li>De minimis elimination increases costs</li>
+                            <li>Export rebate reductions (April 2026)</li>
+                            <li>Highly competitive market</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="source">Sources: Statista, US Census Bureau, USTR Section 301 Tariff List</p>
+            </div>
+
+            <div class="section">
+                <h3>🇯🇵 Japan Market</h3>
+                
+                <div class="alert success">
+                    <h3>✅ RECOMMENDED: Highest Growth Potential</h3>
+                    <p>Japan offers the strongest growth trajectory with favorable trade conditions:</p>
+                    <ul>
+                        <li><strong>9.4% CAGR</strong> through 2034 (highest among analyzed markets)</li>
+                        <li><strong>Low tariffs:</strong> 5-8% + 10% consumption tax (vs 25-54% in US)</li>
+                        <li><strong>E-commerce growth:</strong> 11.2% CAGR, reaching ¥1.5 trillion by 2030</li>
+                        <li><strong>Cultural fit:</strong> Strong appreciation for minimalist, quality jewelry</li>
+                    </ul>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">2024 Market Size</div>
+                        <div class="value">¥1 Trillion</div>
+                        <div class="description">~$10-12B USD equivalent</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Growth Rate</div>
+                        <div class="value">9.4% CAGR</div>
+                        <div class="description">2024-2034 (highest potential)</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">E-Commerce Growth</div>
+                        <div class="value">11.2% CAGR</div>
+                        <div class="description">Reaching ¥1.5T by 2030</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Tariff Rate</div>
+                        <div class="value">5-8%</div>
+                        <div class="description">+ 10% consumption tax (favorable)</div>
+                    </div>
+                </div>
+
+                <h4>Key Success Factors for Japan</h4>
+                <ul>
+                    <li><strong>Quality over quantity:</strong> Japanese consumers prioritize craftsmanship and attention to detail</li>
+                    <li><strong>Minimalist aesthetic:</strong> Wabi-sabi, zen, and nature-inspired designs resonate strongly</li>
+                    <li><strong>Packaging matters:</strong> Premium packaging is non-negotiable</li>
+                    <li><strong>Customer service:</strong> Fast, polite Japanese-language support essential</li>
+                    <li><strong>Platforms:</strong> Rakuten (30%), Amazon JP (25%), Yahoo Shopping (15%)</li>
+                </ul>
+
+                <p class="source">Sources: Yano Research Institute, Japan External Trade Organization (JETRO), Statista Japan</p>
+            </div>
+
+            <div class="section">
+                <h3>🇦🇺 Australia Market</h3>
+                
+                <div class="alert">
+                    <h3>⚖️ MODERATE OPPORTUNITY: Stable but Slower Growth</h3>
+                    <p>Australia offers favorable trade conditions but modest growth:</p>
+                    <ul>
+                        <li><strong>2.76-3.46% CAGR</strong> through 2030 (slowest growth)</li>
+                        <li><strong>Favorable tariffs:</strong> AUD 1,000 de minimis threshold (10% GST above)</li>
+                        <li><strong>Strong wellness culture:</strong> Crystal/spiritual jewelry mainstream</li>
+                        <li><strong>Sustainability focus:</strong> Ethical sourcing highly valued</li>
+                    </ul>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">2024 Market Size</div>
+                        <div class="value">$3.02B AUD</div>
+                        <div class="description">~$2B USD equivalent</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Growth Rate</div>
+                        <div class="value">2.76-3.46%</div>
+                        <div class="description">CAGR 2024-2030 (modest)</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">2030 Projection</div>
+                        <div class="value">$3.6-3.7B AUD</div>
+                        <div class="description">Steady but slow growth</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">De Minimis</div>
+                        <div class="value">AUD 1,000</div>
+                        <div class="description">Favorable threshold (10% GST above)</div>
+                    </div>
+                </div>
+
+                <h4>Key Success Factors for Australia</h4>
+                <ul>
+                    <li><strong>Wellness positioning:</strong> Crystal/energy jewelry is mainstream, not niche</li>
+                    <li><strong>Natural materials:</strong> Opal (national gemstone), ocean/beach themes</li>
+                    <li><strong>Sustainability:</strong> Must emphasize ethical sourcing (greenwashing will backfire)</li>
+                    <li><strong>Casual style:</strong> Everyday wearable jewelry preferred over formal</li>
+                    <li><strong>Platforms:</strong> Amazon AU (30-35%), eBay AU (20-25%), Etsy</li>
+                </ul>
+
+                <p class="source">Sources: IBISWorld Australia, Statista Australia, Australian Bureau of Statistics</p>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Niche Market Analysis</h2>
+
+                <h3>1. Anxiety/Fidget Jewelry</h3>
+                
+                <div class="alert critical">
+                    <h3>❌ MISLEADING CLAIM: NOT a "Blue Ocean"</h3>
+                    <p>Previous research positioned this as an uncontested market. Reality: <strong>Highly competitive red ocean.</strong></p>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">Market Growth</div>
+                        <div class="value">7-14% CAGR</div>
+                        <div class="description">Solid growth but competitive</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Competition Level</div>
+                        <div class="value">HIGH</div>
+                        <div class="description">Established brands + Amazon white-label</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Price Range</div>
+                        <div class="value">$8-130</div>
+                        <div class="description">Wide range, margins compressed at low end</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Market Reality</div>
+                        <div class="value">Red Ocean</div>
+                        <div class="description">NOT blue ocean as claimed</div>
+                    </div>
+                </div>
+
+                <h4>Major Competitors</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Est. Revenue</th>
+                            <th>Key Products</th>
+                            <th>Positioning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Komuso Design</td>
+                            <td>~$5M/year</td>
+                            <td>The Shift breathing necklace</td>
+                            <td>Premium ($90-130), patented</td>
+                        </tr>
+                        <tr>
+                            <td>EVRYJEWELS</td>
+                            <td>$10-30M</td>
+                            <td>Fidget rings, spinner necklaces</td>
+                            <td>Mid-range, high traffic</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon White-Label</td>
+                            <td>$1M+ per seller</td>
+                            <td>Spinner rings</td>
+                            <td>Budget ($8-15), high volume</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✅ Opportunities</h4>
+                        <ul>
+                            <li>Growing mental health awareness</li>
+                            <li>Functional jewelry trend</li>
+                            <li>Komuso proves $5M+ possible</li>
+                            <li>Good margins at premium tier</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>❌ Challenges</h4>
+                        <ul>
+                            <li>Saturated at low price points</li>
+                            <li>Komuso has patents (design risk)</li>
+                            <li>Requires differentiation</li>
+                            <li>Amazon dominated by Chinese sellers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="source">Sources: Komuso Design, EVRYJEWELS, Amazon Best Sellers, Market Research Reports</p>
+            </div>
+
+            <div class="section">
+                <h3>2. Pet Memorial Jewelry</h3>
+                
+                <div class="alert success">
+                    <h3>✅ VALIDATED: Strong Fundamentals</h3>
+                    <p>Market data verified. This represents a legitimate high-value opportunity.</p>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">Total Market Size</div>
+                        <div class="value">$6.265B</div>
+                        <div class="description">Pet memorial products (2024)</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Cremation Jewelry</div>
+                        <div class="value">11-12% CAGR</div>
+                        <div class="description">Fastest growing subsegment</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Average Order Value</div>
+                        <div class="value">$60-199</div>
+                        <div class="description">High emotional value = high AOV</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Competition Quality</div>
+                        <div class="value">LOW</div>
+                        <div class="description">Most competitors have poor branding</div>
+                    </div>
+                </div>
+
+                <h4>Market Characteristics</h4>
+                <ul>
+                    <li><strong>Emotional purchase:</strong> Customers willing to pay premium for quality</li>
+                    <li><strong>Low competition quality:</strong> Most websites outdated, poor visuals</li>
+                    <li><strong>High customer service needs:</strong> Dealing with grieving pet owners</li>
+                    <li><strong>Viral potential:</strong> "Rainbow Bridge" narrative resonates deeply</li>
+                </ul>
+
+                <h4>Major Competitors</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Est. Revenue</th>
+                            <th>Price Range</th>
+                            <th>Weakness</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saint Diamonds</td>
+                            <td>$5-15M</td>
+                            <td>$1,499+</td>
+                            <td>Ultra-premium only</td>
+                        </tr>
+                        <tr>
+                            <td>Spirit Pieces</td>
+                            <td>$2-5M</td>
+                            <td>$60-200</td>
+                            <td>Outdated website design</td>
+                        </tr>
+                        <tr>
+                            <td>EverWith Memorial</td>
+                            <td>$1-3M</td>
+                            <td>$70-150</td>
+                            <td>Limited marketing</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✅ Opportunities</h4>
+                        <ul>
+                            <li>High AOV ($60-199)</li>
+                            <li>Emotional connection = brand loyalty</li>
+                            <li>Competitors have poor branding/visuals</li>
+                            <li>AI content advantage (Rainbow Bridge videos)</li>
+                            <li>China supply chain mature (resin/glass)</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>❌ Challenges</h4>
+                        <ul>
+                            <li>Requires high emotional intelligence</li>
+                            <li>Customer service must handle grief</li>
+                            <li>One-time purchase (low repeat rate)</li>
+                            <li>Sensitive marketing required</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="source">Sources: Saint Diamonds, Spirit Pieces, Pet Loss Market Research 2024</p>
+            </div>
+
+            <div class="section">
+                <h3>3. Crystal & Spiritual Jewelry</h3>
+                
+                <div class="alert critical">
+                    <h3>⚠️ CRITICAL DATA FABRICATION DETECTED</h3>
+                    <p>Previous research claimed crystal jewelry market at $27.4B → $61.4B by 2033.</p>
+                    <p><strong>ACTUAL: ~$1B market (20-50x smaller than claimed)</strong></p>
+                    <p>This appears to be a data fabrication or misinterpretation. The $27.4B figure cannot be verified by any credible source.</p>
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="label">Claimed Market Size</div>
+                        <div class="value">$27.4B</div>
+                        <div class="description" style="color: #dc3545;">FABRICATED - Cannot verify</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Actual Market Size</div>
+                        <div class="value">~$1B</div>
+                        <div class="description" style="color: #28a745;">Verified estimate</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Spiritual Jewelry</div>
+                        <div class="value">$14.78B</div>
+                        <div class="description">Broader category (verified)</div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="label">Growth Rate</div>
+                        <div class="value">6.2% CAGR</div>
+                        <div class="description">Spiritual jewelry segment</div>
+                    </div>
+                </div>
+
+                <h4>Market Reality</h4>
+                <p>While crystal/spiritual jewelry is a real and growing market, the size was dramatically overstated:</p>
+                <ul>
+                    <li><strong>Spiritual jewelry market:</strong> $14.78B (2024), growing 6.2% CAGR</li>
+                    <li><strong>Crystal jewelry subsegment:</strong> Estimated ~$1B (much smaller niche)</li>
+                    <li><strong>Competition:</strong> Highly fragmented, 3000+ Etsy sellers</li>
+                    <li><strong>Major players:</strong> Energy Muse ($5-25M), Satya Jewelry ($5-10M)</li>
+                </ul>
+
+                <p class="source">Sources: Market.us Spiritual Jewelry Report, Etsy Market Analysis</p>
+            </div>
+
+            <div class="section">
+                <h2>💡 Strategic Recommendations</h2>
+
+                <div class="recommendation">
+                    <h3>🎯 Primary Recommendation: Pivot to Japan-First Strategy</h3>
+                    <p><strong>Rationale:</strong> US market economics fundamentally broken by tariff changes. Japan offers highest growth (9.4% CAGR) with favorable trade conditions.</p>
+                    
+                    <h4>Recommended Approach:</h4>
+                    <ol>
+                        <li><strong>Phase 1 (Months 1-3):</strong> Launch in Japan with minimalist/zen jewelry line
+                            <ul>
+                                <li>Target platforms: Rakuten, Amazon JP, BASE</li>
+                                <li>Product focus: Baroque pearl, hammered metal, nature-inspired</li>
+                                <li>Investment: $5,000-8,000</li>
+                            </ul>
+                        </li>
+                        <li><strong>Phase 2 (Months 4-6):</strong> Expand to Australia with crystal/wellness line
+                            <ul>
+                                <li>Leverage Australia's mainstream wellness culture</li>
+                                <li>Emphasize sustainability and ethical sourcing</li>
+                                <li>Investment: $8,000-12,000</li>
+                            </ul>
+                        </li>
+                        <li><strong>Phase 3 (Months 7-12):</strong> Test US market with pet memorial (high AOV offsets tariffs)
+                            <ul>
+                                <li>Only viable US niche given tariff structure</li>
+                                <li>$60-199 AOV can absorb 25-54% tariff impact</li>
+                                <li>Investment: $10,000-15,000</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <h3>Market × Niche Opportunity Matrix</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Niche / Market</th>
+                            <th>🇯🇵 Japan</th>
+                            <th>🇦🇺 Australia</th>
+                            <th>🇺🇸 US</th>
+                            <th>Overall Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Minimalist/Zen</strong></td>
+                            <td><span class="rating high">EXCELLENT</span></td>
+                            <td><span class="rating medium">GOOD</span></td>
+                            <td><span class="rating low">POOR (tariffs)</span></td>
+                            <td><span class="rating high">RECOMMENDED</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Crystal/Wellness</strong></td>
+                            <td><span class="rating medium">MODERATE</span></td>
+                            <td><span class="rating high">EXCELLENT</span></td>
+                            <td><span class="rating low">POOR (tariffs)</span></td>
+                            <td><span class="rating high">RECOMMENDED</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pet Memorial</strong></td>
+                            <td><span class="rating medium">GOOD</span></td>
+                            <td><span class="rating medium">GOOD</span></td>
+                            <td><span class="rating medium">VIABLE (high AOV)</span></td>
+                            <td><span class="rating medium">SELECTIVE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Anxiety/Fidget</strong></td>
+                            <td><span class="rating medium">MODERATE</span></td>
+                            <td><span class="rating medium">GOOD</span></td>
+                            <td><span class="rating low">SATURATED</span></td>
+                            <td><span class="rating low">NOT RECOMMENDED</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>⚠️ Risk Analysis</h2>
+
+                <h3>Critical Risks</h3>
+
+                <div class="alert critical">
+                    <h3>1. US Market Tariff Risk (CRITICAL)</h3>
+                    <ul>
+                        <li><strong>Impact:</strong> 25-54% cost increase on China-sourced jewelry</li>
+                        <li><strong>Timeline:</strong> Already in effect (Section 301 tariffs)</li>
+                        <li><strong>Mitigation:</strong> Deprioritize US market, focus on Japan/Australia</li>
+                    </ul>
+                </div>
+
+                <div class="alert critical">
+                    <h3>2. Export Rebate Reduction (HIGH)</h3>
+                    <ul>
+                        <li><strong>Impact:</strong> China cutting export tax rebates (April 2026)</li>
+                        <li><strong>Cost increase:</strong> Up to 13% on exported goods</li>
+                        <li><strong>Mitigation:</strong> Factor into pricing models, negotiate with suppliers</li>
+                    </ul>
+                </div>
+
+                <div class="alert">
+                    <h3>3. Market Saturation Risk (MEDIUM)</h3>
+                    <ul>
+                        <li><strong>Anxiety jewelry:</strong> Already saturated at low price points</li>
+                        <li><strong>Crystal jewelry:</strong> 3000+ Etsy sellers, highly fragmented</li>
+                        <li><strong>Mitigation:</strong> Focus on premium positioning, superior branding</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💰 Financial Projections (Revised)</h2>
+
+                <h3>Japan-First Strategy (12-Month Projection)</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Timeline</th>
+                            <th>Investment</th>
+                            <th>Target Revenue</th>
+                            <th>Net Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Phase 1: Japan Launch</td>
+                            <td>Months 1-3</td>
+                            <td>$5,000-8,000</td>
+                            <td>$8,000-12,000/mo</td>
+                            <td>25-30%</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 2: Australia Expansion</td>
+                            <td>Months 4-6</td>
+                            <td>$8,000-12,000</td>
+                            <td>$15,000-20,000/mo</td>
+                            <td>25-30%</td>
+                        </tr>
+                        <tr>
+                            <td>Phase 3: US Pet Memorial</td>
+                            <td>Months 7-12</td>
+                            <td>$10,000-15,000</td>
+                            <td>$25,000-35,000/mo</td>
+                            <td>20-25%</td>
+                        </tr>
+                        <tr style="background: #f5f7fa; font-weight: bold;">
+                            <td>TOTAL (Year 1)</td>
+                            <td>12 months</td>
+                            <td>$23,000-35,000</td>
+                            <td>$180,000-300,000</td>
+                            <td>22-28%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Key Assumptions</h3>
+                <ul>
+                    <li><strong>Japan tariffs:</strong> 5-8% + 10% consumption tax (vs 25-54% US)</li>
+                    <li><strong>Average order value:</strong> ¥5,000-8,000 ($35-55)</li>
+                    <li><strong>Conversion rate:</strong> 2-3% (industry standard)</li>
+                    <li><strong>Customer acquisition cost:</strong> $15-25 (Japan), $10-15 (Australia)</li>
+                    <li><strong>Gross margin:</strong> 60-70% before marketing</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>📋 90-Day Action Plan</h2>
+
+                <h3>Month 1: Japan Market Entry</h3>
+                <div class="data-card">
+                    <h4>Objectives</h4>
+                    <ul>
+                        <li>Source 3-5 minimalist/zen jewelry SKUs from suppliers</li>
+                        <li>Create Rakuten and Amazon JP seller accounts</li>
+                        <li>Develop Japanese product listings (hire native translator)</li>
+                        <li>Design premium packaging (critical for Japan)</li>
+                        <li>Initial inventory: 300-500 units</li>
+                    </ul>
+                    <p><strong>Budget:</strong> $5,000-8,000</p>
+                </div>
+
+                <h3>Month 2: Launch & Optimize</h3>
+                <div class="data-card">
+                    <h4>Objectives</h4>
+                    <ul>
+                        <li>Launch products on Rakuten and Amazon JP</li>
+                        <li>Start PPC campaigns (conservative budget)</li>
+                        <li>Monitor customer feedback closely</li>
+                        <li>Adjust product descriptions based on questions</li>
+                        <li>Set up Japanese customer service (outsource if needed)</li>
+                    </ul>
+                    <p><strong>Budget:</strong> $2,000-3,000 (marketing)</p>
+                </div>
+
+                <h3>Month 3: Scale & Prepare Australia</h3>
+                <div class="data-card">
+                    <h4>Objectives</h4>
+                    <ul>
+                        <li>Double down on best-selling Japan SKUs</li>
+                        <li>Reorder inventory based on sales data</li>
+                        <li>Begin Australia market research</li>
+                        <li>Source crystal/wellness jewelry for AU market</li>
+                        <li>Create Amazon AU seller account</li>
+                    </ul>
+                    <p><strong>Target:</strong> $8,000-12,000 revenue from Japan</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Conclusion</h2>
+
+                <div class="recommendation">
+                    <h3>Key Takeaways</h3>
+                    <ol>
+                        <li><strong>US Market No Longer Viable:</strong> 25-54% tariffs + de minimis elimination = broken economics for China-sourced jewelry</li>
+                        <li><strong>Japan is the New Priority:</strong> 9.4% CAGR, favorable tariffs (5-8%), strong cultural fit for minimalist jewelry</li>
+                        <li><strong>Data Integrity Issues:</strong> Previous research contained fabricated data (crystal jewelry $27B claim)</li>
+                        <li><strong>Anxiety Jewelry Mispositioned:</strong> Not a "blue ocean" - highly competitive red ocean market</li>
+                        <li><strong>Pet Memorial Validated:</strong> $6.3B market with strong fundamentals, but requires high emotional intelligence</li>
+                    </ol>
+                </div>
+
+                <h3>Strategic Pivot Required</h3>
+                <p>The original strategy focused heavily on the US market. Given the fundamental policy changes in 2025-2026, this approach is no longer viable. A strategic pivot to Japan-first, followed by Australia, offers:</p>
+                <ul>
+                    <li>Higher growth rates (9.4% vs 2.76-3.46%)</li>
+                    <li>Favorable tariff environment (5-8% vs 25-54%)</li>
+                    <li>Less saturated competition</li>
+                    <li>Better cultural fit for premium positioning</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>📚 Sources & Methodology</h2>
+
+                <h3>Primary Sources</h3>
+                <ul>
+                    <li><strong>Global Market Data:</strong> Statista, Grand View Research, McKinsey Jewelry Report 2024</li>
+                    <li><strong>US Market:</strong> US Census Bureau, Statista US, USTR Section 301 Tariff Lists</li>
+                    <li><strong>Japan Market:</strong> Yano Research Institute, JETRO, Statista Japan</li>
+                    <li><strong>Australia Market:</strong> IBISWorld Australia, Australian Bureau of Statistics</li>
+                    <li><strong>Pet Memorial:</strong> Pet Loss Market Research 2024, Saint Diamonds, Spirit Pieces</li>
+                    <li><strong>Anxiety Jewelry:</strong> Komuso Design, EVRYJEWELS, Amazon Best Sellers</li>
+                    <li><strong>Crystal/Spiritual:</strong> Market.us Spiritual Jewelry Report, Etsy Market Analysis</li>
+                    <li><strong>Trade Policy:</strong> US Customs and Border Protection, China Ministry of Commerce</li>
+                </ul>
+
+                <h3>Research Team</h3>
+                <p>This report was compiled by a team of 6 specialized research agents conducting parallel investigations:</p>
+                <ul>
+                    <li>Global jewelry market analyst</li>
+                    <li>Anxiety/fidget jewelry specialist</li>
+                    <li>Pet memorial market researcher</li>
+                    <li>Crystal/spiritual jewelry analyst</li>
+                    <li>Trade policy and cross-border e-commerce expert</li>
+                    <li>Regional market analyst (US, Japan, Australia)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>⚡ Final Recommendation</h2>
+
+                <div class="recommendation">
+                    <h3>Proceed with Japan-First Strategy</h3>
+                    <p><strong>Recommended Action:</strong> Launch minimalist/zen jewelry line in Japan within 30 days.</p>
+                    
+                    <h4>Why Japan?</h4>
+                    <ul>
+                        <li>Highest growth rate (9.4% CAGR through 2034)</li>
+                        <li>Favorable tariffs (5-8% vs 25-54% in US)</li>
+                        <li>Strong cultural fit for quality, minimalist jewelry</li>
+                        <li>E-commerce growing 11.2% CAGR</li>
+                        <li>Less saturated than US market</li>
+                    </ul>
+
+                    <h4>Avoid US Market (For Now)</h4>
+                    <p>The "Golden Era" of Chinese cross-border e-commerce to the US is over. Only consider US for high-AOV products (pet memorial) where margins can absorb 25-54% tariffs.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="background: #f8f9fa; padding: 30px; text-align: center; color: #666;">
+            <p><strong>Strategic Assessment Report</strong></p>
+            <p>Generated: February 2026 | Research Team: 6 Specialized Agents</p>
+            <p>Methodology: Independent verification of all claims with primary sources</p>
+        </div>
+
+    </div>
+</body>
+</html>

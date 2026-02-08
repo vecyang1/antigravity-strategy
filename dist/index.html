@@ -1004,75 +1004,6 @@
       max-height: 2000px;
     }
 
-    /* ===== CLICK TRACKER OVERLAY ===== */
-    .click-tracker {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 200;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px;
-      min-width: 200px;
-      font-size: 11px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s;
-    }
-
-    .click-tracker.minimized {
-      min-width: auto;
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-
-    .click-tracker.minimized .tracker-body {
-      display: none;
-    }
-
-    .tracker-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-      cursor: pointer;
-    }
-
-    .tracker-title {
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--primary);
-      letter-spacing: 1px;
-    }
-
-    .tracker-toggle {
-      color: var(--text-muted);
-      font-size: 14px;
-    }
-
-    .tracker-body {
-      display: block;
-    }
-
-    .tracker-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 3px 0;
-      color: var(--text-dim);
-    }
-
-    .tracker-row .count {
-      font-family: var(--mono);
-      color: var(--green);
-    }
-
-    .tracker-total {
-      border-top: 1px solid var(--border);
-      margin-top: 6px;
-      padding-top: 6px;
-      color: var(--text);
-      font-weight: 600;
-    }
 
     /* ===== FOOTER ===== */
     .footer {
@@ -1195,11 +1126,11 @@
     <div class="nav-inner">
       <div class="nav-logo">Antigravity Lab</div>
       <div class="nav-links">
-        <a href="#tracks" onclick="trackClick('nav','tracks')">赛道分析</a>
-        <a href="#markets" onclick="trackClick('nav','markets')">市场机会</a>
-        <a href="#policy" onclick="trackClick('nav','policy')">国家政策</a>
-        <a href="#matrix" onclick="trackClick('nav','matrix')">适配矩阵</a>
-        <a href="#action" onclick="trackClick('nav','action')">行动计划</a>
+        <a href="#tracks">赛道分析</a>
+        <a href="#markets">市场机会</a>
+        <a href="#policy">国家政策</a>
+        <a href="#matrix">适配矩阵</a>
+        <a href="#action">行动计划</a>
       </div>
     </div>
   </nav>
@@ -1217,31 +1148,31 @@
 
     <!-- STATS -->
     <div class="stats">
-      <div class="stat animate-in delay-1" onclick="trackClick('stat','global-market')">
+      <div class="stat animate-in delay-1">
         <div class="stat-tooltip">Grand View Research 2025</div>
         <div class="value">$381B</div>
         <div class="label">全球珠宝市场</div>
         <div class="source">GVR 2025</div>
       </div>
-      <div class="stat animate-in delay-2" onclick="trackClick('stat','ecom-jewelry')">
+      <div class="stat animate-in delay-2">
         <div class="stat-tooltip">Technavio 2026 Forecast</div>
         <div class="value">$93.3B</div>
         <div class="label">珠宝电商市场</div>
         <div class="source">Technavio</div>
       </div>
-      <div class="stat animate-in delay-3" onclick="trackClick('stat','custom-jewelry')">
+      <div class="stat animate-in delay-3">
         <div class="stat-tooltip">Research & Markets, CAGR 16%</div>
         <div class="value">$42.3B</div>
         <div class="label">个性化定制首饰</div>
         <div class="source">R&M 2026</div>
       </div>
-      <div class="stat animate-in delay-4" onclick="trackClick('stat','crossborder')">
+      <div class="stat animate-in delay-4">
         <div class="stat-tooltip">BRI, CAGR 18.7%</div>
         <div class="value">$1,245B</div>
         <div class="label">跨境电商总量</div>
         <div class="source">BRI 2024</div>
       </div>
-      <div class="stat animate-in delay-4" onclick="trackClick('stat','china-cbec')">
+      <div class="stat animate-in delay-4">
         <div class="stat-tooltip">中国海关 2025</div>
         <div class="value">2.75万亿</div>
         <div class="label">中国跨境电商 (CNY)</div>
@@ -1257,16 +1188,16 @@
 
       <!-- TABS for filtering -->
       <div class="tabs">
-        <div class="tab active" onclick="filterTracks('all', this); trackClick('filter','all')">全部 (8)</div>
-        <div class="tab" onclick="filterTracks('recommend', this); trackClick('filter','recommend')">推荐</div>
-        <div class="tab" onclick="filterTracks('caution', this); trackClick('filter','caution')">谨慎</div>
-        <div class="tab" onclick="filterTracks('nogo', this); trackClick('filter','nogo')">不推荐</div>
+        <div class="tab active" onclick="filterTracks('all', this)">全部 (8)</div>
+        <div class="tab" onclick="filterTracks('recommend', this)">推荐</div>
+        <div class="tab" onclick="filterTracks('caution', this)">谨慎</div>
+        <div class="tab" onclick="filterTracks('nogo', this)">不推荐</div>
       </div>
 
       <div class="tracks" id="tracks-grid">
 
         <!-- Track 1: Crystal -->
-        <div class="track" data-category="recommend" onclick="toggleTrack(this); trackClick('track','crystal')">
+        <div class="track" data-category="recommend" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🔮 现代神秘学 / 能量水晶</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1283,20 +1214,20 @@
           <div class="track-desc">水晶手链市场$1.94B (2025)，Spiritual Jewelry $3.2B。市场大但红海，机会在于多数品牌视觉老旧，AI电影级视觉可降维打击。</div>
           <div class="track-brands">
             <div class="brand-row"
-              onclick="event.stopPropagation(); toggleBrand(this); trackClick('brand','energy-muse')">
+              onclick="event.stopPropagation(); toggleBrand(this)">
               <span class="brand-name"><a href="https://energymuse.com" target="_blank"
                   onclick="event.stopPropagation()">Energy Muse</a> <span class="data-src">verified</span></span>
               <span class="brand-rev">$10M-$25M</span>
             </div>
             <div class="brand-detail">创立于2000年，加州Torrance。Inc.5000
               #3038。11-50员工，月访客30K+。均价$51，最贵$5000。2017年营收$2.3M，2021-22增至$10-25M。估值$10-37.5M。</div>
-            <div class="brand-row" onclick="event.stopPropagation(); trackClick('brand','satya')">
+            <div class="brand-row" onclick="event.stopPropagation()">
               <span class="brand-name"><a href="https://satyajewelry.com" target="_blank"
                   onclick="event.stopPropagation()">Satya Jewelry</a></span>
               <span class="brand-rev">$5M-$10M</span>
             </div>
             <div class="brand-detail">NYC品牌，Chakra系列。Nordstrom有售。灵性+时尚结合。</div>
-            <div class="brand-row" onclick="event.stopPropagation(); trackClick('brand','conscious-items')">
+            <div class="brand-row" onclick="event.stopPropagation()">
               <span class="brand-name"><a href="https://consciousitems.com" target="_blank"
                   onclick="event.stopPropagation()">Conscious Items</a></span>
               <span class="brand-rev">$3M-$8M</span>
@@ -1339,7 +1270,7 @@
         </div>
 
         <!-- Track 2: Anxiety -->
-        <div class="track" data-category="recommend" onclick="toggleTrack(this); trackClick('track','anxiety')">
+        <div class="track" data-category="recommend" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🎡 焦虑克星 / Fidget Jewelry</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1355,7 +1286,7 @@
           <div class="track-desc">Komuso Design验证$5M+市场(bootstrapped, 25万+客户)。定价$90-130，中国供应链$3-8，利润空间巨大。ASMR视频天然病毒传播。
           </div>
           <div class="track-brands">
-            <div class="brand-row" onclick="event.stopPropagation(); toggleBrand(this); trackClick('brand','komuso')">
+            <div class="brand-row" onclick="event.stopPropagation(); toggleBrand(this)">
               <span class="brand-name"><a href="https://komusodesign.com" target="_blank"
                   onclick="event.stopPropagation()">Komuso Design (The Shift)</a> <span
                   class="data-src">verified</span></span>
@@ -1364,7 +1295,7 @@
             <div class="brand-detail">2017年由Todd & Vanessa
               Steinberg创立。灵感来自日本僧侣尺八吹管。<strong>25万+客户，4.8星评分</strong>。2项美国专利。FSA/HSA可报销。83%客户反馈焦虑减轻。316医疗级不锈钢。Forbes/WSJ/Men's
               Health报道。被1000+模仿者山寨。</div>
-            <div class="brand-row" onclick="event.stopPropagation(); trackClick('brand','evryjewels')">
+            <div class="brand-row" onclick="event.stopPropagation()">
               <span class="brand-name"><a href="https://evryjewels.com" target="_blank"
                   onclick="event.stopPropagation()">EVRYJEWELS</a></span>
               <span class="brand-rev">$10M-$30M (全品类)</span>
@@ -1417,7 +1348,7 @@
         </div>
 
         <!-- Track 3: Pet Memorial -->
-        <div class="track" data-category="recommend" onclick="toggleTrack(this); trackClick('track','pet-memorial')">
+        <div class="track" data-category="recommend" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🐾 宠物纪念 / Pet Memorial</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1434,7 +1365,7 @@
           <div class="track-desc">情感刚需 + 高客单价($60-$5000) + 竞品视觉极粗糙。AI"彩虹桥"视频 = 情感核弹。67%美国家庭养宠，65%宠主愿购纪念产品。</div>
           <div class="track-brands">
             <div class="brand-row"
-              onclick="event.stopPropagation(); toggleBrand(this); trackClick('brand','saint-diamonds')">
+              onclick="event.stopPropagation(); toggleBrand(this)">
               <span class="brand-name"><a href="https://saintdiamonds.com" target="_blank"
                   onclick="event.stopPropagation()">Saint Diamonds (骨灰变钻石)</a></span>
               <span class="brand-rev">$5M-$15M</span>
@@ -1495,7 +1426,7 @@
         </div>
 
         <!-- Track 4: Nature/Resin -->
-        <div class="track" data-category="caution" onclick="toggleTrack(this); trackClick('track','nature-resin')">
+        <div class="track" data-category="caution" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🌿 自然标本馆 / 树脂首饰</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1539,7 +1470,7 @@
         </div>
 
         <!-- Track 5: Secret Message -->
-        <div class="track" data-category="caution" onclick="toggleTrack(this); trackClick('track','secret-msg')">
+        <div class="track" data-category="caution" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">📜 信物 / Secret Message</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1577,7 +1508,7 @@
         </div>
 
         <!-- Track 6: Y2K -->
-        <div class="track" data-category="nogo" onclick="toggleTrack(this); trackClick('track','y2k')">
+        <div class="track" data-category="nogo" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🦾 赛博 / Y2K辣妹</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1612,7 +1543,7 @@
         </div>
 
         <!-- Track 7: Zen -->
-        <div class="track" data-category="caution" onclick="toggleTrack(this); trackClick('track','zen')">
+        <div class="track" data-category="caution" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🧘 极简禅意 / Wabi-sabi</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1642,7 +1573,7 @@
         </div>
 
         <!-- Track 8: Pet Soul (AI) -->
-        <div class="track" data-category="recommend" onclick="toggleTrack(this); trackClick('track','pet-soul-ai')">
+        <div class="track" data-category="recommend" onclick="toggleTrack(this)">
           <div class="track-header">
             <span class="track-name">🌈 宠物灵魂摆渡 / AI情感杀器</span>
             <span class="track-toggle">点击展开 ▸</span>
@@ -1734,7 +1665,7 @@
       <div class="markets" id="markets-grid">
 
         <!-- US -->
-        <div class="market" onclick="toggleMarket(this); trackClick('market','US')">
+        <div class="market" onclick="toggleMarket(this)">
           <div class="market-flag">🇺🇸</div>
           <div class="market-name">美国</div>
           <div class="market-size">$35-40B</div>
@@ -1786,7 +1717,7 @@
         </div>
 
         <!-- JP -->
-        <div class="market" onclick="toggleMarket(this); trackClick('market','JP')">
+        <div class="market" onclick="toggleMarket(this)">
           <div class="market-flag">🇯🇵</div>
           <div class="market-name">日本</div>
           <div class="market-size">¥800-900亿</div>
@@ -1823,7 +1754,7 @@
         </div>
 
         <!-- MX -->
-        <div class="market" onclick="toggleMarket(this); trackClick('market','MX')">
+        <div class="market" onclick="toggleMarket(this)">
           <div class="market-flag">🇲🇽</div>
           <div class="market-name">墨西哥</div>
           <div class="market-size">$2-2.5B</div>
@@ -1861,7 +1792,7 @@
         </div>
 
         <!-- ME -->
-        <div class="market" onclick="toggleMarket(this); trackClick('market','ME')">
+        <div class="market" onclick="toggleMarket(this)">
           <div class="market-flag">🌙</div>
           <div class="market-name">中东</div>
           <div class="market-size">$3-4B</div>
@@ -1898,7 +1829,7 @@
         </div>
 
         <!-- AU -->
-        <div class="market" onclick="toggleMarket(this); trackClick('market','AU')">
+        <div class="market" onclick="toggleMarket(this)">
           <div class="market-flag">🇦🇺</div>
           <div class="market-name">澳洲</div>
           <div class="market-size">AUD 1.5-2B</div>
@@ -1946,7 +1877,7 @@
 
       <div class="policy-cards">
 
-        <div class="policy-card" onclick="trackClick('policy','tax-refund')">
+        <div class="policy-card">
           <div class="policy-icon">💰</div>
           <div class="policy-title">出口退税: 仿首饰 13%</div>
           <div class="policy-body">
@@ -1959,7 +1890,7 @@
           </div>
         </div>
 
-        <div class="policy-card" onclick="trackClick('policy','departure-refund')">
+        <div class="policy-card">
           <div class="policy-icon">🚀</div>
           <div class="policy-title">"离境即退税" 新政</div>
           <div class="policy-body">
@@ -1971,7 +1902,7 @@
           </div>
         </div>
 
-        <div class="policy-card" onclick="trackClick('policy','cbec-upgrade')">
+        <div class="policy-card">
           <div class="policy-icon">🏛️</div>
           <div class="policy-title">跨境电商升级为国家制度</div>
           <div class="policy-body">
@@ -1985,7 +1916,7 @@
           </div>
         </div>
 
-        <div class="policy-card" onclick="trackClick('policy','vat-2026')">
+        <div class="policy-card">
           <div class="policy-icon">⚠️</div>
           <div class="policy-title">2026增值税法: 注意时效</div>
           <div class="policy-body">
@@ -1997,7 +1928,7 @@
           </div>
         </div>
 
-        <div class="policy-card" onclick="trackClick('policy','trial-zones')">
+        <div class="policy-card">
           <div class="policy-icon">🌐</div>
           <div class="policy-title">综试区扩围: 165个城市</div>
           <div class="policy-body">
@@ -2009,7 +1940,7 @@
           </div>
         </div>
 
-        <div class="policy-card" onclick="trackClick('policy','market-scale')">
+        <div class="policy-card">
           <div class="policy-icon">📈</div>
           <div class="policy-title">2.75万亿: 跨境电商规模</div>
           <div class="policy-body">
@@ -2071,7 +2002,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','crystal')">
+            <tr onclick="this.classList.toggle('highlighted')">
               <td>① 水晶/神秘学</td>
               <td class="m4">★★★★</td>
               <td class="m2">★★</td>
@@ -2080,7 +2011,7 @@
               <td class="m5">★★★★★</td>
               <td class="rec-cell rec-good">次优选</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','anxiety')"
+            <tr onclick="this.classList.toggle('highlighted')"
               style="background:rgba(255,132,0,0.05)">
               <td>② 焦虑克星</td>
               <td class="m5">★★★★★</td>
@@ -2090,7 +2021,7 @@
               <td class="m4">★★★★</td>
               <td class="rec-cell rec-top">⭐ 首推!</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','pet')">
+            <tr onclick="this.classList.toggle('highlighted')">
               <td>③ 宠物羁绊</td>
               <td class="m3">★★★</td>
               <td class="m4">★★★★</td>
@@ -2099,7 +2030,7 @@
               <td class="m3">★★★</td>
               <td class="rec-cell rec-ok">可选</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','resin')">
+            <tr onclick="this.classList.toggle('highlighted')">
               <td>④ 自然/树脂</td>
               <td class="m3">★★★</td>
               <td class="m5">★★★★★</td>
@@ -2108,7 +2039,7 @@
               <td class="m3">★★★</td>
               <td class="rec-cell rec-ok">适合JP</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','gift')">
+            <tr onclick="this.classList.toggle('highlighted')">
               <td>⑤ 信物/礼品</td>
               <td class="m3">★★★</td>
               <td class="m2">★★</td>
@@ -2117,7 +2048,7 @@
               <td class="m2">★★</td>
               <td class="rec-cell rec-ok">适合MX/ME</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','y2k')">
+            <tr onclick="this.classList.toggle('highlighted')">
               <td>⑥ 赛博/Y2K</td>
               <td class="m2">★★</td>
               <td class="m3">★★★</td>
@@ -2126,7 +2057,7 @@
               <td class="m2">★★</td>
               <td class="rec-cell rec-no">❌ 不推荐</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','zen')">
+            <tr onclick="this.classList.toggle('highlighted')">
               <td>⑦ 极简禅意</td>
               <td class="m3">★★★</td>
               <td class="m4">★★★★</td>
@@ -2135,7 +2066,7 @@
               <td class="m3">★★★</td>
               <td class="rec-cell rec-ok">适合JP/ME</td>
             </tr>
-            <tr onclick="this.classList.toggle('highlighted'); trackClick('matrix','pet-memorial')"
+            <tr onclick="this.classList.toggle('highlighted')"
               style="background:rgba(255,132,0,0.05)">
               <td>⑧ 宠物纪念</td>
               <td class="m5">★★★★★</td>
@@ -2155,7 +2086,7 @@
       <div class="section-label">Part 4</div>
       <div class="section-title">双轨行动计划</div>
       <div class="dual-track">
-        <div class="action-card primary" onclick="trackClick('action','trackA')">
+        <div class="action-card primary">
           <div class="action-label a">TRACK A · 快速起量</div>
           <div class="action-title">焦虑克星</div>
           <div class="action-sub">🇺🇸 US + 🇦🇺 AU &nbsp;|&nbsp; 客单价 $29-$59</div>
@@ -2168,7 +2099,7 @@
             <li>⚠️ 规避Komuso 2项专利，设计差异化</li>
           </ul>
         </div>
-        <div class="action-card secondary" onclick="trackClick('action','trackB')">
+        <div class="action-card secondary">
           <div class="action-label b">TRACK B · 高利润池</div>
           <div class="action-title">宠物纪念</div>
           <div class="action-sub">🇺🇸 US &nbsp;|&nbsp; 客单价 $69-$199</div>
@@ -2186,21 +2117,21 @@
       <!-- Timeline -->
       <div class="timeline">
         <div class="section-label" style="margin-top:32px; margin-bottom:16px;">90天行动计划</div>
-        <div class="timeline-row" onclick="trackClick('timeline','month1')">
+        <div class="timeline-row">
           <div class="timeline-month">Month 1</div>
           <div>
             <div class="timeline-tasks">采购3-5个SKU → Amazon FBA账号 → 首批500件 → Listing + TikTok → PPC启动</div>
             <div class="timeline-target">→ 美国市场启动 | 注册综试区公司享受退税</div>
           </div>
         </div>
-        <div class="timeline-row" onclick="trackClick('timeline','month2')">
+        <div class="timeline-row">
           <div class="timeline-month">Month 2</div>
           <div>
             <div class="timeline-tasks">爆款追加1000件 → 开设Amazon AU → 适配澳洲 → AU FBA上线 → "离境即退税"申报</div>
             <div class="timeline-target">→ 美国放大 + 澳洲启动</div>
           </div>
         </div>
-        <div class="timeline-row" onclick="trackClick('timeline','month3')">
+        <div class="timeline-row">
           <div class="timeline-month">Month 3</div>
           <div>
             <div class="timeline-tasks">优化双市场 → 日本调研 → 开发极简禅意线 → Year 1路线图</div>
@@ -2313,60 +2244,8 @@
 
   </div><!-- .container -->
 
-  <!-- CLICK TRACKER -->
-  <div class="click-tracker" id="clickTracker">
-    <div class="tracker-header" onclick="toggleTracker()">
-      <span class="tracker-title">CLICK TRACKER</span>
-      <span class="tracker-toggle" id="trackerToggle">−</span>
-    </div>
-    <div class="tracker-body" id="trackerBody">
-      <div class="tracker-row"><span>赛道点击</span><span class="count" id="ct-track">0</span></div>
-      <div class="tracker-row"><span>品牌点击</span><span class="count" id="ct-brand">0</span></div>
-      <div class="tracker-row"><span>市场点击</span><span class="count" id="ct-market">0</span></div>
-      <div class="tracker-row"><span>政策点击</span><span class="count" id="ct-policy">0</span></div>
-      <div class="tracker-row"><span>矩阵点击</span><span class="count" id="ct-matrix">0</span></div>
-      <div class="tracker-row"><span>导航点击</span><span class="count" id="ct-nav">0</span></div>
-      <div class="tracker-row"><span>行动计划</span><span class="count" id="ct-action">0</span></div>
-      <div class="tracker-row tracker-total"><span>总交互</span><span class="count" id="ct-total">0</span></div>
-    </div>
-  </div>
 
   <script>
-    // ===== CLICK TRACKING =====
-    const clicks = { track: 0, brand: 0, market: 0, policy: 0, matrix: 0, nav: 0, action: 0, stat: 0, filter: 0, timeline: 0 };
-    let totalClicks = 0;
-
-    function trackClick(category, item) {
-      clicks[category] = (clicks[category] || 0) + 1;
-      totalClicks++;
-      updateTracker();
-      // Log to console for debugging
-      console.log(`[CLICK] ${category}/${item} — total: ${totalClicks}`);
-    }
-
-    function updateTracker() {
-      document.getElementById('ct-track').textContent = clicks.track || 0;
-      document.getElementById('ct-brand').textContent = clicks.brand || 0;
-      document.getElementById('ct-market').textContent = clicks.market || 0;
-      document.getElementById('ct-policy').textContent = clicks.policy || 0;
-      document.getElementById('ct-matrix').textContent = clicks.matrix || 0;
-      document.getElementById('ct-nav').textContent = clicks.nav || 0;
-      document.getElementById('ct-action').textContent = (clicks.action || 0) + (clicks.timeline || 0);
-      document.getElementById('ct-total').textContent = totalClicks;
-    }
-
-    function toggleTracker() {
-      const tracker = document.getElementById('clickTracker');
-      const body = document.getElementById('trackerBody');
-      const toggle = document.getElementById('trackerToggle');
-      if (body.style.display === 'none') {
-        body.style.display = 'block';
-        toggle.textContent = '−';
-      } else {
-        body.style.display = 'none';
-        toggle.textContent = '+';
-      }
-    }
 
     // ===== TRACK EXPAND/COLLAPSE =====
     function toggleTrack(el) {
